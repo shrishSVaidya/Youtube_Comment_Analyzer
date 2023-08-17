@@ -1,0 +1,7 @@
+tensorflow
+flask
+googleapiclient
+numpy
+pandas
+scikit-learn
+gunicorn

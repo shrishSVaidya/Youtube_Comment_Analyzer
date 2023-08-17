@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='styles/yt.ico') }}" type="image/x-icon">
+        <title>YouTube Comment Analyzer</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>YouTube Comment Analyzer</h1>
+            <div class="input-section">
+                <input type="text" id="youtubeLink" placeholder="Enter YouTube Video Link">
+                <button id="'myButton" onclick="analyzeComments()">Analyze</button>
+            </div>
+            <div id="loadingAnimation" class="loading"></div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <h2 id="char1"></h2>
+                    <canvas id="chart1" width="300" height="300"></canvas>
+                </div>
+                <div class="chart" >
+                    <h2 id="char2"></h2>
+                    <canvas id="chart2" width="300" height="300"></canvas>
+                </div>
+                <div class="chart">
+                    <h2 id="char3"></h2>
+                    <canvas id="chart3" width="300" height="300"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <h2 id="char4"></h2>
+                    <canvas id="chart4" width="300" height="300"></canvas>
+                </div>
+                <div class="chart">
+                    <h2 id="char5"></h2>
+                    <canvas id="chart5" width="300" height="300"></canvas>
+                </div>
+                <div class="chart" >
+                    <h2 id="char6"></h2>
+                    <canvas id="chart6" width="300" height="300"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <h2 id="char7"></h2>
+                    <canvas id="chart7" width="300" height="300"></canvas>
+                </div>
+            </div>
+            
+        </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+
+</html>
